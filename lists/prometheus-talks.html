@@ -1,49 +1,50 @@
 Simply a list of prometheus talks
 
-## PromCon berlin 2016
-#### Prometheus Design and Philosophy
 
-Prometheus is an opinionated monitoring system that chooses to do a lot of
+<h2>PromCon berlin 2016</h2>
+<h4>Prometheus Design and Philosophy</h4>
+
+<p>Prometheus is an opinionated monitoring system that chooses to do a lot of
 things differently from traditional monitoring systems. This leads to a
 culture clash for those used to other approaches, and raises questions as to
 why we didn't take a seemingly better approach. This talk focuses on the "why"
 behind many of the design decisions that are core to Prometheus, including
 pull vs. push, the dimensional data model, relabeling, per-process exporters,
 stateful client libraries, as well as aspects like metric naming conventions
-and having a non-distributed storage as a design goal.
+and having a non-distributed storage as a design goal.</p>
 
 <a href="https://www.youtube.com/embed/4DzoajMs4DM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus Is Good for Your Small Startup
+<h4>Prometheus Is Good for Your Small Startup</h4>
 
-ShuttleCloud is a small startup specialized in email and contacts migrations.
-We are proud of having Gmail, Gcontacts and Comcast among our clients.
+<p>ShuttleCloud is a small startup specialized in email and contacts migrations.
+We are proud of having Gmail, Gcontacts and Comcast among our clients.</p>
 
 <a href="https://www.youtube.com/embed/gMHa4Yh8avk?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Scaling to a Million Machines with Prometheus
+<h4>Scaling to a Million Machines with Prometheus</h4>
 
-Digital Ocean hosts a public facing monitoring platform that runs on top of
+<p>Digital Ocean hosts a public facing monitoring platform that runs on top of
 Prometheus. We will discuss how we scale Prometheus up to millions of virtual
 machines. How we manage and maintain the largest Prometheus cluster in the
-world. Also how we do multi-tenancy in Prometheus.
+world. Also how we do multi-tenancy in Prometheus.</p>
 
 <a href="https://www.youtube.com/embed/likpVWB5Lvo?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Life of a Label
+<h4>Life of a Label</h4>
 
-Labels are at the core of Prometheus's dimensional data model. The Prometheus
+<p>Labels are at the core of Prometheus's dimensional data model. The Prometheus
 server and its surrounding ecosystem components all either attach, modify, or
 act on labels in various ways. In this talk, Brian explains the entire life
 cycle of labels, including their generation in the client libraries, their
 transformation in relabeling, as well as their use in service discovery and
-alerting.
+alerting.</p>
 
 <a href="https://www.youtube.com/embed/b5-SvvZ7AwI?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### The Prometheus Time Series Database
+<h4>The Prometheus Time Series Database</h4>
 
-Various time series databases (TSDBs) have been implemented on top of
+<p>Various time series databases (TSDBs) have been implemented on top of
 key-value stores with BigTable semantics. The TSDB that sits at the core of
 the Prometheus monitoring system started with a similar approach and was built
 on top of LevelDB. The Prometheus server as we know it today, however, uses a
@@ -52,75 +53,75 @@ server to sustain an ingestion rate of 500,000 samples per second belonging to
 millions of time series. Very recent improvements of the in-memory
 representation of sample data resulted in an outstanding compression level of
 1.3 bytes per sample in a typical production setup. A journey from fundamental
-challenges of TSDB design to details of the Prometheus storage layer.
+challenges of TSDB design to details of the Prometheus storage layer.</p>
 
 <a href="https://www.youtube.com/embed/HbnGSNEjhUc?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Monitoring DreamHack - The World's Largest Digital Festival
+<h4>Monitoring DreamHack - The World's Largest Digital Festival</h4>
 
-If you are operating the network for 10,000's of demanding gamers, you need to
+<p>If you are operating the network for 10,000's of demanding gamers, you need to
 really know what is going on inside your network. Oh, and everything needs to
-be built from scratch in just five days.
+be built from scratch in just five days.</p>
 
 <a href="https://www.youtube.com/embed/7IPdyKwr_wg?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Full Stack Metrics with Triton's Native Prometheus Support
+<h4>Full Stack Metrics with Triton's Native Prometheus Support</h4>
 
-Triton is the open source data center automation solution that powers public
+<p>Triton is the open source data center automation solution that powers public
 cloud and private data centers world-wide. In early 2016, Joyent undertook a
 project to expose infrastructure and system for every instance — including
 infrastructure containers, Docker containers, and hardware virtual machines —
 using a Prometheus-compatible agent. The project, called Triton Container
 Monitor and described in our public request for discussion,
-
+</p>
 
 <a href="https://www.youtube.com/embed/X8QV9HgPNbc?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### 10x Improvement for Kubernetes Performance
+<h4>10x Improvement for Kubernetes Performance</h4>
 
-Scalability is one of the important factors that make a successful distributed
+<p>Scalability is one of the important factors that make a successful distributed
 system. At CoreOS, we love Kubernetes and help drive the project forward
 through upstream contributions. Learn how we analyzed Kubernetes cluster
 performance to gain insight into cluster behavior under large workloads and
 learn where there are performance issues. See how we used Prometheus for
-improving Kubernetes scheduler performance by 10x.
+improving Kubernetes scheduler performance by 10x.</p>
 
 <a href="https://www.youtube.com/embed/HS-a_RG7iX0?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Multitenant, Scale-Out Prometheus
+<h4>Multitenant, Scale-Out Prometheus</h4>
 
-In this talk we'll present a prototype solution for multitenant, scale-out
-Prometheus.
+<p>In this talk we'll present a prototype solution for multitenant, scale-out
+Prometheus.</p>
 
 <a href="https://www.youtube.com/embed/3Tb4Wc0kfCM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day One
+<h4>Lightning Talks Day One</h4>
 
-None
+<p>None</p>
 
 <a href="https://www.youtube.com/embed/pRVsSepIB_Q?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Graphing MySQL Performance with Prometheus and Grafana
+<h4>Graphing MySQL Performance with Prometheus and Grafana</h4>
 
-Grafana and Prometheus is a great tandem for monitoring and visualizing MySQL
+<p>Grafana and Prometheus is a great tandem for monitoring and visualizing MySQL
 and system performance. In this session, we will go through Grafana usage,
 most important metrics to visualize and how the graphs and dashboards help in
-troubleshooting problems.
+troubleshooting problems.</p>
 
 <a href="https://www.youtube.com/embed/YOKJ1ISyQks?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### The History of Prometheus at SoundCloud
+<h4>The History of Prometheus at SoundCloud</h4>
 
-The way SoundCloud monitors its services and infrastructure has dramatically
+<p>The way SoundCloud monitors its services and infrastructure has dramatically
 changed over the last couple of years. Monitoring, alerting, and being on-call
 is now deeply ingrained in every engineering team and we have learned a lot on
-the way.
+the way.</p>
 
 <a href="https://www.youtube.com/embed/cdKc8ePbj4A?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus as a Customer-Facing Monitoring Tool for SpatialOS Simulations
+<h4>Prometheus as a Customer-Facing Monitoring Tool for SpatialOS Simulations</h4>
 
-At Improbable we provide a platform for spatially distributed simulations to
+<p>At Improbable we provide a platform for spatially distributed simulations to
 our customers. We use Prometheus for monitoring our internal microservice
 stack, but also offer it as a first class customer-facing system on our
 platform. As far as we know, we are currently running one of the largest
@@ -128,472 +129,472 @@ Prometheus set ups, with multiple clusters of federated Prometheus stacks.
 Given the nature of the simulations built by our users, monitoring becomes
 their go-to tool for debugging and troubleshooting. Since our customer facing
 Prometheus stack is multitenant, we have also implemented monitoring data
-isolation based on ACLs.
+isolation based on ACLs.</p>
 
 <a href="https://www.youtube.com/embed/39xVoFW6eUw?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Grafana Master Class
+<h4>Grafana Master Class</h4>
 
-Grafana is a powerful tool with lots of options and settings. Some of them are
+<p>Grafana is a powerful tool with lots of options and settings. Some of them are
 barely documented. In this session I will show some of the features in Grafana
-that go beyond just drawing graphs on a screen.
+that go beyond just drawing graphs on a screen.</p>
 
 <a href="https://www.youtube.com/embed/KoU_DquChS8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Alerting in the Prometheus universe
+<h4>Alerting in the Prometheus universe</h4>
 
-In a Cloud Native infrastructure, failure is normal and expected. The loss of a
+<p>In a Cloud Native infrastructure, failure is normal and expected. The loss of a
 single node or a dozen hard drives is gracefully handled by the systems running
 a datacenter and there is no reason to page someone at 4am.
 This calls for an alerting system that understands service availability at a global
 scope, yet is still able to give detailed reports if and when there is a service-impacting
 incident. Prometheus achieves this by defining alerting conditions directly on time
 series data. The resulting alerts are grouped and aggregated into comprehensive and
-meaningful notifications.
+meaningful notifications.</p>
 
 <a href="https://www.youtube.com/embed/yrK6z3fpu1E?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Dynamic Monitoring with Prometheus and Rancher
+<h4>Dynamic Monitoring with Prometheus and Rancher</h4>
 
-Both Prometheus and Rancher have extremely active communities and were born
-from the same requirement to support the newer dynamic infrastructures.
+<p>Both Prometheus and Rancher have extremely active communities and were born
+from the same requirement to support the newer dynamic infrastructures.</p>
 
 <a href="https://www.youtube.com/embed/fSJs-lvegtI?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Deploying Prometheus at DigitalOcean
+<h4>Deploying Prometheus at DigitalOcean</h4>
 
-This talk focuses on how we use configuration management at DigitalOcean to
+<p>This talk focuses on how we use configuration management at DigitalOcean to
 deploy and maintain many instances of Prometheus. We will discuss the benefits
-and challenges of deploying Prometheus at a large scale.
+and challenges of deploying Prometheus at a large scale.</p>
 
 <a href="https://www.youtube.com/embed/ieo3lGBHcy8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Hadoop, Fluentd Cluster Monitoring with Prometheus and Grafana
+<h4>Hadoop, Fluentd Cluster Monitoring with Prometheus and Grafana</h4>
 
-At LINE, we are creating and maintaining a log analysis platform on top of
+<p>At LINE, we are creating and maintaining a log analysis platform on top of
 Hadoop, Hive, and Fluentd. We were unsatisfied with existing monitoring
 systems like Ganglia and Nagios and recently started using Prometheus and
 Grafana. We especially liked Prometheus's powerful query language, unified
 monitoring and alerting, as well as the pull-based architecture. We created
 Prometheus exporters for Hadoop and jstat and fluentd, and are also using Node
 Exporter to monitor machine-level metrics. For access and application log
-metrics, we use fluent-plugin-prometheus. This talk presents our use case.
+metrics, we use fluent-plugin-prometheus. This talk presents our use case.</p>
 
 <a href="https://www.youtube.com/embed/dzmzvmul7PU?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### So You Want to Write an Exporter
+<h4>So You Want to Write an Exporter</h4>
 
-In the glorious future, cancer will be cured, world hunger will solved and all
+<p>In the glorious future, cancer will be cured, world hunger will solved and all
 because everything was directly instrumented for Prometheus. Until then
 however, we need to write exporters. This talk will look at how to go about
-this and all the tradeoffs involved in writing a good exporter.
+this and all the tradeoffs involved in writing a good exporter.</p>
 
 <a href="https://www.youtube.com/embed/KXq5ibSj2qA?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day Two
+<h4>Lightning Talks Day Two</h4>
 
-None
+<p>None</p>
 
 <a href="https://www.youtube.com/embed/MPH2kMi6wyM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-## PromCon munich 2017
-#### Monitoring Cloudflare's Planet-Scale Edge Network with Prometheus
+<h2>PromCon munich 2017</h2>
+<h4>Monitoring Cloudflare's Planet-Scale Edge Network with Prometheus</h4>
 
-Cloudflare operates a global anycast edge network serving content for 6 million web sites. This talk explains how we monitor our network, how we migrated from Nagios to Prometheus and the architecture we chose to provide maximum reliability for monitoring. We'll also discuss the impact of alert fatigue and how we reduced alert noise by analysing data, making alerts more actionable and alerting on symptoms rather than causes.
+<p>Cloudflare operates a global anycast edge network serving content for 6 million web sites. This talk explains how we monitor our network, how we migrated from Nagios to Prometheus and the architecture we chose to provide maximum reliability for monitoring. We'll also discuss the impact of alert fatigue and how we reduced alert noise by analysing data, making alerts more actionable and alerting on symptoms rather than causes.</p>
 
 <a href="https://www.youtube.com/embed/ypWwvz5t_LE?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Start Your Engines: White Box Monitoring for Your Load Tests
+<h4>Start Your Engines: White Box Monitoring for Your Load Tests</h4>
 
-You think monitoring is only for production? Wrong: Add a metrics endpoint to your application to get insights during your load tests - and use them for free to monitor production!
+<p>You think monitoring is only for production? Wrong: Add a metrics endpoint to your application to get insights during your load tests - and use them for free to monitor production!</p>
 
 <a href="https://www.youtube.com/embed/NQ3DYMs6KWc?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Best Practices and Beastly Pitfalls
+<h4>Best Practices and Beastly Pitfalls</h4>
 
-Julius gives an overview over the most important best practices and most treacherous pitfalls when starting to use Prometheus.
+<p>Julius gives an overview over the most important best practices and most treacherous pitfalls when starting to use Prometheus.</p>
 
 <a href="https://www.youtube.com/embed/_MNYuTNfTb4?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus as a (Internal) Service
+<h4>Prometheus as a (Internal) Service</h4>
 
-LINE is a large company with many different development teams. Momentum can be a powerful force within a company so it can take some time, training (including unlearning the old) and evangelizing to get a new system adopted. This talk will give a brief summary of our development team’s monitoring environment (Prometheus, Grafana, Promgen) before going into educating developers on Prometheus adoption and some of the struggles and lessons learned from providing Prometheus as an internal service.
+<p>LINE is a large company with many different development teams. Momentum can be a powerful force within a company so it can take some time, training (including unlearning the old) and evangelizing to get a new system adopted. This talk will give a brief summary of our development team’s monitoring environment (Prometheus, Grafana, Promgen) before going into educating developers on Prometheus adoption and some of the struggles and lessons learned from providing Prometheus as an internal service.</p>
 
 <a href="https://www.youtube.com/embed/c61pNvU90yM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Grafana and Prometheus
+<h4>Grafana and Prometheus</h4>
 
-Being the default dashboard for Prometheus I guess most of you already tried Grafana and created some graphs. But have you tried the table and heat map panels? Did you know that Grafana also offers multiple plugins to visualize and show your Prometheus data? What other tricks and optimizations are there?
+<p>Being the default dashboard for Prometheus I guess most of you already tried Grafana and created some graphs. But have you tried the table and heat map panels? Did you know that Grafana also offers multiple plugins to visualize and show your Prometheus data? What other tricks and optimizations are there?</p>
 
 <a href="https://www.youtube.com/embed/PDpP1uX_orE?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Why We Love Prometheus Even Though I Hate It
+<h4>Why We Love Prometheus Even Though I Hate It</h4>
 
-At Anchorfree we had about 10 monitoring systems of different types. It was difficult to manage, we had 0 observability, as it was impossible to see whole picture. We decided to go with Prometheus full speed, migrated all the major and minor systems to it. This was not easy move, as we faced with a bunch of problems, fundamental misunderstandings, and resistance.
+<p>At Anchorfree we had about 10 monitoring systems of different types. It was difficult to manage, we had 0 observability, as it was impossible to see whole picture. We decided to go with Prometheus full speed, migrated all the major and minor systems to it. This was not easy move, as we faced with a bunch of problems, fundamental misunderstandings, and resistance.</p>
 
 <a href="https://www.youtube.com/embed/Z-4XmQPBFn8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Analyze Prometheus Metrics like a Data Scientist
+<h4>Analyze Prometheus Metrics like a Data Scientist</h4>
 
-Gathering software metrics with Prometheus is great and easy. However, at some point there are too many timeseries to craft handwritten rule based alert systems. In this talk I will show how to export data from the Prometheus HTTP API, show how and what to analyze with open-source tools like R, Python SciPi and describe why DevOps and Whitebox Monitoring fits so great here. As an outlook I will show how to integrate/export timeseries to machine learning services.
+<p>Gathering software metrics with Prometheus is great and easy. However, at some point there are too many timeseries to craft handwritten rule based alert systems. In this talk I will show how to export data from the Prometheus HTTP API, show how and what to analyze with open-source tools like R, Python SciPi and describe why DevOps and Whitebox Monitoring fits so great here. As an outlook I will show how to integrate/export timeseries to machine learning services.</p>
 
 <a href="https://www.youtube.com/embed/aUOgPdaXOwQ?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Alertmanager and High Availability
+<h4>Alertmanager and High Availability</h4>
 
-The Alertmanager is a highly critical component in the monitoring pipeline.  Operators must trust it to be a reliable component. Thus in the 0.5 release of the Alertmanager a high availability mode has been implemented. This talk will go over some implementation details of the high availability mode as well as highlight what this means for operators using and running the Alertmanager.
+<p>The Alertmanager is a highly critical component in the monitoring pipeline.  Operators must trust it to be a reliable component. Thus in the 0.5 release of the Alertmanager a high availability mode has been implemented. This talk will go over some implementation details of the high availability mode as well as highlight what this means for operators using and running the Alertmanager.</p>
 
 <a href="https://www.youtube.com/embed/i6Hmc0bKHAY?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Play with Prometheus - Journey to Make “testing in Production” More Reliable
+<h4>Play with Prometheus - Journey to Make “testing in Production” More Reliable</h4>
 
-Gilt is a high end fashion e-commerce that in the recent years has moved from a monolithic architecture to 150+ distributed microservices running on AWS.
+<p>Gilt is a high end fashion e-commerce that in the recent years has moved from a monolithic architecture to 150+ distributed microservices running on AWS.</p>
 
 <a href="https://www.youtube.com/embed/btnXuFLcpS8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### The Uninstrumentable; Getting Apache Spark and Prometheus to Play Nicely
+<h4>The Uninstrumentable; Getting Apache Spark and Prometheus to Play Nicely</h4>
 
-Speaker 2: 
+<p>Speaker 2: </p>
 
 <a href="https://www.youtube.com/embed/KMk1aJaAkhw?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Social Aspects of Change (or How We Stopped Worrying and Learned to Love Prometheus)
+<h4>Social Aspects of Change (or How We Stopped Worrying and Learned to Love Prometheus)</h4>
 
-Companies are (still) run by people they need to accept the technology driving the company's business. Introducing the best of technologies will lead to nowhere unless this change is accepted at all levels of the organization. This talk will cover lessons learned when introducing Prometheus into a long-established company with many organically-grown and thus highly-fragmented systems.
+<p>Companies are (still) run by people they need to accept the technology driving the company's business. Introducing the best of technologies will lead to nowhere unless this change is accepted at all levels of the organization. This talk will cover lessons learned when introducing Prometheus into a long-established company with many organically-grown and thus highly-fragmented systems.</p>
 
 <a href="https://www.youtube.com/embed/NDbLJkqsUWI?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day One
+<h4>Lightning Talks Day One</h4>
 
-Speaker: 
+<p>Speaker: </p>
 
 <a href="https://www.youtube.com/embed/4_wIpa5Mgn8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Cortex: Prometheus as a Service, One Year On
+<h4>Cortex: Prometheus as a Service, One Year On</h4>
 
-At PromCon 2016, I presented "Project Frankenstein: A multitenant, horizontally scalable Prometheus as a service". It's now one year later, and lots has changed - not least the name!  This talk will discuss what we've learnt running a Prometheus service for the past year, the architectural changes we made from the original design, and the improvements we've made to the Cortex user experience.
+<p>At PromCon 2016, I presented "Project Frankenstein: A multitenant, horizontally scalable Prometheus as a service". It's now one year later, and lots has changed - not least the name!  This talk will discuss what we've learnt running a Prometheus service for the past year, the architectural changes we made from the original design, and the improvements we've made to the Cortex user experience.</p>
 
 <a href="https://www.youtube.com/embed/_8DmPW4iQBQ?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus Everything, Observing Kubernetes in the Cloud
+<h4>Prometheus Everything, Observing Kubernetes in the Cloud</h4>
 
-As the industry moves towards a microservices architecture, many companies are embracing container orchestration solutions. DigitalOcean is no different. Over the course of the last year, DigitalOcean’s move towards a container orchestration solution based on Kubernetes has empowered service owners to quickly and efficiently deploy and update their applications. A vital component of this, however, is a white box monitoring and alerting solution based upon Prometheus and Alertmanager.
+<p>As the industry moves towards a microservices architecture, many companies are embracing container orchestration solutions. DigitalOcean is no different. Over the course of the last year, DigitalOcean’s move towards a container orchestration solution based on Kubernetes has empowered service owners to quickly and efficiently deploy and update their applications. A vital component of this, however, is a white box monitoring and alerting solution based upon Prometheus and Alertmanager.</p>
 
 <a href="https://www.youtube.com/embed/5P_A7KN7F6I?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Alert on All the Things: Integrating Quicksilver with Prometheus
+<h4>Alert on All the Things: Integrating Quicksilver with Prometheus</h4>
 
-Cloudflare provides its services from 115 data centres in 57 countries. One of the most critical systems is a key-value store that replicates configuration data to every single machine, which we recently rewrote from scratch. As developers we were early adopters of Prometheus at Cloudflare, and this talk will explain how we set up Grafana dashboards for monitoring and Alertmanager for alerting, giving us unprecedented insight. It’ll also cover the gotchas we encountered. Like that one time when we triggered 7000 alerts at once.
+<p>Cloudflare provides its services from 115 data centres in 57 countries. One of the most critical systems is a key-value store that replicates configuration data to every single machine, which we recently rewrote from scratch. As developers we were early adopters of Prometheus at Cloudflare, and this talk will explain how we set up Grafana dashboards for monitoring and Alertmanager for alerting, giving us unprecedented insight. It’ll also cover the gotchas we encountered. Like that one time when we triggered 7000 alerts at once.</p>
 
 <a href="https://www.youtube.com/embed/TRi822rw5b8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Integrating Prometheus and InfluxDB
+<h4>Integrating Prometheus and InfluxDB</h4>
 
-This talk will look at the different integrations between InfluxDB and Prometheus. We'll dive into using InfluxDB for remote long term storage. Other examples will show how to use Kapacitor to scrape Prometheus metrics targets to pull data into InfluxDB and transform it on the fly to different schemas. Finally, we'll take a look at the upcoming enhancements to the Influx Query Language and possible implementation of PromQL within Influx itself for better long term integration of the two projects.
+<p>This talk will look at the different integrations between InfluxDB and Prometheus. We'll dive into using InfluxDB for remote long term storage. Other examples will show how to use Kapacitor to scrape Prometheus metrics targets to pull data into InfluxDB and transform it on the fly to different schemas. Finally, we'll take a look at the upcoming enhancements to the Influx Query Language and possible implementation of PromQL within Influx itself for better long term integration of the two projects.</p>
 
 <a href="https://www.youtube.com/embed/BZkHlhautGk?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### A Worked Example of Monitoring a Queue Based Application
+<h4>A Worked Example of Monitoring a Queue Based Application</h4>
 
-There has been a lot of work around educating people about how to instrument their applications, and how to set up your Prometheus installation to do tons of interesting things. This talk aims to address questions around which metrics provide the most value, and why. We will go through an example of instrumenting a service in production at Qubit, and explain the rationale behind the metrics we use for alerting and dashboarding. The aim is to give viewers a concrete example of how to monitor something, and highlight the logic behind the decisions made, be they specific to this service, or generalisable to almost anything.
+<p>There has been a lot of work around educating people about how to instrument their applications, and how to set up your Prometheus installation to do tons of interesting things. This talk aims to address questions around which metrics provide the most value, and why. We will go through an example of instrumenting a service in production at Qubit, and explain the rationale behind the metrics we use for alerting and dashboarding. The aim is to give viewers a concrete example of how to monitor something, and highlight the logic behind the decisions made, be they specific to this service, or generalisable to almost anything.</p>
 
 <a href="https://www.youtube.com/embed/EtxM48cWr4Y?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Storing 16 Bytes at Scale
+<h4>Storing 16 Bytes at Scale</h4>
 
-From the beginning, Prometheus was built as a monitoring system with Cloud Native environments in mind. Orchestration systems such as Kubernetes are rapidly gaining traction and unlock features of highly dynamic environments, such as frequent rolling updates and auto-scaling, for everyone. This inevitably puts new strains on Prometheus as well.
+<p>From the beginning, Prometheus was built as a monitoring system with Cloud Native environments in mind. Orchestration systems such as Kubernetes are rapidly gaining traction and unlock features of highly dynamic environments, such as frequent rolling updates and auto-scaling, for everyone. This inevitably puts new strains on Prometheus as well.</p>
 
 <a href="https://www.youtube.com/embed/b_pEevMAC3I?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Improving User and Developer Experience of the Alertmanager UI
+<h4>Improving User and Developer Experience of the Alertmanager UI</h4>
 
-Alertmanager deduplicates, groups, and routes alerts from Prometheus to all
+<p>Alertmanager deduplicates, groups, and routes alerts from Prometheus to all
 kinds of paging services. With it comes a dated UI which does not live up to
-the expectations of the users, nor does it attract new contributors.
+the expectations of the users, nor does it attract new contributors.</p>
 
 <a href="https://www.youtube.com/embed/TpifnbUGXD8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Using TSDB as a library
+<h4>Using TSDB as a library</h4>
 
-This talk will be an introductory talk about using the new datastore as a library. It will be based on this blog: 
+<p>This talk will be an introductory talk about using the new datastore as a library. It will be based on this blog: </p>
 
 <a href="https://www.youtube.com/embed/AYnXeMGAZes?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Staleness in Prometheus 2.0
+<h4>Staleness in Prometheus 2.0</h4>
 
-The biggest semantic change in Prometheus 2.0 is the new staleness handling. This long awaited feature means there's no longer a fixed 5 minute staleness. Now time series go stale when they're no longer exposed, and targets that no longer exist don't hang around for a full 5 minutes. Learn about how it works and how to take advantage of it.
+<p>The biggest semantic change in Prometheus 2.0 is the new staleness handling. This long awaited feature means there's no longer a fixed 5 minute staleness. Now time series go stale when they're no longer exposed, and targets that no longer exist don't hang around for a full 5 minutes. Learn about how it works and how to take advantage of it.</p>
 
 <a href="https://www.youtube.com/embed/GcTzd2CLH7I?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day Two
+<h4>Lightning Talks Day Two</h4>
 
-Removing the Blindfold with Prometheus
+<p>Removing the Blindfold with Prometheus</p>
 
 <a href="https://www.youtube.com/embed/-53todbei6c?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-## PromCon munich 2018
-#### Observability and Product Release: Leveraging Prometheus for Building and Testing New Products at Digital Ocean
+<h2>PromCon munich 2018</h2>
+<h4>Observability and Product Release: Leveraging Prometheus for Building and Testing New Products at Digital Ocean</h4>
 
-The pillars of observability have long been accepted as key components of any microservice-in-production. But what about those new products - those new features - that have yet to be released? Properly instrumenting and leveraging metrics at this stage is perhaps even more crucial; when a product is yet to be released, identifying and addressing early bugs is critical.
+<p>The pillars of observability have long been accepted as key components of any microservice-in-production. But what about those new products - those new features - that have yet to be released? Properly instrumenting and leveraging metrics at this stage is perhaps even more crucial; when a product is yet to be released, identifying and addressing early bugs is critical.</p>
 
 <a href="https://www.youtube.com/embed/gNk7Y0AW9HI?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Life of an Alert
+<h4>Life of an Alert</h4>
 
-Alerting is a key concept to remediating issues that arise in the systems we monitor. In order to alert effectively, it's helpful to understand the concepts available in Alertmanager and how they are actually executed within the code. In this talk, I'll give a brief, high-level description of the wondrous journey an alert takes, from its triggering in Prometheus to the email in your mailbox. Then, I'll break down in-depth how alerts are ingested, grouped, and processed, including high availability mode. At the end of this exciting trip you'll understand how your configuration affects Alertmanager, what an alerting pipeline is, and why you sometimes get two emails for the same alert.
+<p>Alerting is a key concept to remediating issues that arise in the systems we monitor. In order to alert effectively, it's helpful to understand the concepts available in Alertmanager and how they are actually executed within the code. In this talk, I'll give a brief, high-level description of the wondrous journey an alert takes, from its triggering in Prometheus to the email in your mailbox. Then, I'll break down in-depth how alerts are ingested, grouped, and processed, including high availability mode. At the end of this exciting trip you'll understand how your configuration affects Alertmanager, what an alerting pipeline is, and why you sometimes get two emails for the same alert.</p>
 
 <a href="https://www.youtube.com/embed/PUdjca23Qa4?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Hidden Linux Metrics with ebpf_exporter
+<h4>Hidden Linux Metrics with ebpf_exporter</h4>
 
-While there are plenty of readily available metrics for monitoring the Linux kernel, many gems remain hidden. With the help of recent developments in eBPF, it is now possible to run safe programs in the kernel to collect arbitrary information with little to no overhead. A few examples include:
+<p>While there are plenty of readily available metrics for monitoring the Linux kernel, many gems remain hidden. With the help of recent developments in eBPF, it is now possible to run safe programs in the kernel to collect arbitrary information with little to no overhead. A few examples include:</p>
 
 <a href="https://www.youtube.com/embed/dRdJ75tKZak?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus Monitoring Mixins: Using Jsonnet to Package Together Dashboards, Alerts, and Exporters
+<h4>Prometheus Monitoring Mixins: Using Jsonnet to Package Together Dashboards, Alerts, and Exporters</h4>
 
-Prometheus offers powerful open source monitoring and alerting - but that comes with higher degrees of freedom, making pre-configured monitoring "packages" hard to build. Simultaneously, it's becoming accepted wisdom that the developers of a given software package are best placed to operate said software, or at least construct the basic monitoring configuration.
+<p>Prometheus offers powerful open source monitoring and alerting - but that comes with higher degrees of freedom, making pre-configured monitoring "packages" hard to build. Simultaneously, it's becoming accepted wisdom that the developers of a given software package are best placed to operate said software, or at least construct the basic monitoring configuration.</p>
 
 <a href="https://www.youtube.com/embed/GDdnL5R_l-Y?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Autoscaling All Things Kubernetes with Prometheus
+<h4>Autoscaling All Things Kubernetes with Prometheus</h4>
 
-Autoscaling in Kubernetes used to be an inconsistent concept, however using the new metrics APIs defined by Kubernetes SIG Instrumentation the monitoring system of choice can be used. As it turns out, Prometheus is a popular system being used alongside Kubernetes, and the community has already developed a custom-metrics-api adapter to be used for Prometheus. This means, we can now perform autoscaling on the cluster and application level with metrics collected by Prometheus.
+<p>Autoscaling in Kubernetes used to be an inconsistent concept, however using the new metrics APIs defined by Kubernetes SIG Instrumentation the monitoring system of choice can be used. As it turns out, Prometheus is a popular system being used alongside Kubernetes, and the community has already developed a custom-metrics-api adapter to be used for Prometheus. This means, we can now perform autoscaling on the cluster and application level with metrics collected by Prometheus.</p>
 
 <a href="https://www.youtube.com/embed/yaB8I6_qR_k?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Taking Advantage of Relabeling
+<h4>Taking Advantage of Relabeling</h4>
 
-Relabeling is a powerful feature of Prometheus but it is also quite specific to the project. This talk will explain and demonstrate relabeling, with some real use cases. After the presentation, you will understand relabeling and stop to copy/paste relabeling rules you don't understand.
+<p>Relabeling is a powerful feature of Prometheus but it is also quite specific to the project. This talk will explain and demonstrate relabeling, with some real use cases. After the presentation, you will understand relabeling and stop to copy/paste relabeling rules you don't understand.</p>
 
 <a href="https://www.youtube.com/embed/QufG6rjbsOM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Bomb Squad: Containing the Cardinality Explosion
+<h4>Bomb Squad: Containing the Cardinality Explosion</h4>
 
-Series cardinality can be a large foot-gun that can take out a Prometheus instance quickly. It can have similar impacts to downstream systems when using remote write. Finding the offending series and recovering from such an event can cause a large downtime for your Prometheus installation. In this talk I will show an implementation of a sidecar to Prometheus that automatically detects and squelches series whose cardinality is growing quickly. Using a combination of recording rules, dynamic metric relabel configs, and alerting, we can detect, throttle, and alert on any explosion in progress.
+<p>Series cardinality can be a large foot-gun that can take out a Prometheus instance quickly. It can have similar impacts to downstream systems when using remote write. Finding the offending series and recovering from such an event can cause a large downtime for your Prometheus installation. In this talk I will show an implementation of a sidecar to Prometheus that automatically detects and squelches series whose cardinality is growing quickly. Using a combination of recording rules, dynamic metric relabel configs, and alerting, we can detect, throttle, and alert on any explosion in progress.</p>
 
 <a href="https://www.youtube.com/embed/MHiXP5QW4_U?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Thanos - Prometheus at Scale
+<h4>Thanos - Prometheus at Scale</h4>
 
-The Prometheus Monitoring system has been thriving for several years. Along with its powerful data model, operational simplicity and reliability have been a key factor in its success. However, some questions were still largely unaddressed to this day. How can we store historical data at the order of petabytes in a reliable and cost-efficient way? Can we do so without sacrificing responsive query times? And what about a global view of all our metrics and transparent handling of HA setups?
+<p>The Prometheus Monitoring system has been thriving for several years. Along with its powerful data model, operational simplicity and reliability have been a key factor in its success. However, some questions were still largely unaddressed to this day. How can we store historical data at the order of petabytes in a reliable and cost-efficient way? Can we do so without sacrificing responsive query times? And what about a global view of all our metrics and transparent handling of HA setups?</p>
 
 <a href="https://www.youtube.com/embed/Fb_lYX01IX4?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Using the Flux Query Engine to Query Multiple Prometheus Servers
+<h4>Using the Flux Query Engine to Query Multiple Prometheus Servers</h4>
 
-The new open source Flux query engine for InfluxDB is designed to be decoupled from storage. This makes it possible to query many different data sources, including Prometheus, with the new engine. The engine also decouples the representation of the query language from the execution representation. This makes it possible to add support for additional languages, like PromQL.
+<p>The new open source Flux query engine for InfluxDB is designed to be decoupled from storage. This makes it possible to query many different data sources, including Prometheus, with the new engine. The engine also decouples the representation of the query language from the execution representation. This makes it possible to add support for additional languages, like PromQL.</p>
 
 <a href="https://www.youtube.com/embed/yO2X6oNba6k?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Panel Discussion: Prometheus Long-Term Storage Approaches
+<h4>Panel Discussion: Prometheus Long-Term Storage Approaches</h4>
 
-Speakers:
+<p>Speakers:</p>
 
 <a href="https://www.youtube.com/embed/3pTG_N8yGSU?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day One
+<h4>Lightning Talks Day One</h4>
 
-None
+<p>None</p>
 
 <a href="https://www.youtube.com/embed/_L5RjJ7MVv4?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Improving Reliability Through Engineering an Easy-to-use Prometheus-Based Monitoring and Alerting Stack: Introducing Our Reliability Toolkit
+<h4>Improving Reliability Through Engineering an Easy-to-use Prometheus-Based Monitoring and Alerting Stack: Introducing Our Reliability Toolkit</h4>
 
-By definition, SREs are responsible for the reliability of sites, but what if they don't own any sites themselves? Within ING, the largest bank of the Netherlands, BizDevOps teams are autonomous and responsible for building and running their services. In theory, that could make the existence of SRE obsolete, right? How can you improve availability for end customers in an environment of engineers with full service ownership? How to convince without the power of intervention? How to improve without being blameful?
+<p>By definition, SREs are responsible for the reliability of sites, but what if they don't own any sites themselves? Within ING, the largest bank of the Netherlands, BizDevOps teams are autonomous and responsible for building and running their services. In theory, that could make the existence of SRE obsolete, right? How can you improve availability for end customers in an environment of engineers with full service ownership? How to convince without the power of intervention? How to improve without being blameful?</p>
 
 <a href="https://www.youtube.com/embed/m-TOaHfOXoE?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Explore Your Prometheus Data in Grafana
+<h4>Explore Your Prometheus Data in Grafana</h4>
 
-Grafana is the de-facto dashboarding solution for Prometheus. Now imagine you received a page. Grafana is often the starting point for your incident response. You look at a time series panel, form a hypothesis, and would like to dive deeper. We've built a whole new section that allows you to do just that by iterating quickly through Prometheus queries while leaving your dashboards intact. I'll show-case our new Explore UI and how it can fit into your workflows for both troubleshooting and data exploration.
+<p>Grafana is the de-facto dashboarding solution for Prometheus. Now imagine you received a page. Grafana is often the starting point for your incident response. You look at a time series panel, form a hypothesis, and would like to dive deeper. We've built a whole new section that allows you to do just that by iterating quickly through Prometheus queries while leaving your dashboards intact. I'll show-case our new Explore UI and how it can fit into your workflows for both troubleshooting and data exploration.</p>
 
 <a href="https://www.youtube.com/embed/mIfjBcjAEyE?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### RPC Metrics at Google
+<h4>RPC Metrics at Google</h4>
 
-Collecting and alerting on RPC metrics is a fundamental part of Google's reliability story. In this talk, we will go through what we have learned in the last two decades and why we are trying to flex our instrumentation stack to cooperate with Prometheus.
+<p>Collecting and alerting on RPC metrics is a fundamental part of Google's reliability story. In this talk, we will go through what we have learned in the last two decades and why we are trying to flex our instrumentation stack to cooperate with Prometheus.</p>
 
 <a href="https://www.youtube.com/embed/Dm3r0Siu7PU?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### OpenMetrics - Transforming the Prometheus Exposition Format into a Global Standard
+<h4>OpenMetrics - Transforming the Prometheus Exposition Format into a Global Standard</h4>
 
-Prometheus has established a de-facto standard for cloud-native metric exposition. OpenMetrics aims to achieve true interoperability, and to bridge the gap towards other types of monitoring.
+<p>Prometheus has established a de-facto standard for cloud-native metric exposition. OpenMetrics aims to achieve true interoperability, and to bridge the gap towards other types of monitoring.</p>
 
 <a href="https://www.youtube.com/embed/Za7vmKr11cQ?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### What Prometheus Means for Monitoring Vendors
+<h4>What Prometheus Means for Monitoring Vendors</h4>
 
-Users have been looking for a better understanding of how Prometheus monitoring and other commercial monitoring tools compare and contrast when it comes to Docker and Kubernetes monitoring. Are they enemies? Lovers? Twins separated at birth? Let's go there. This talk will discuss the Prometheus ecosystem from a vendor perspective.
+<p>Users have been looking for a better understanding of how Prometheus monitoring and other commercial monitoring tools compare and contrast when it comes to Docker and Kubernetes monitoring. Are they enemies? Lovers? Twins separated at birth? Let's go there. This talk will discuss the Prometheus ecosystem from a vendor perspective.</p>
 
 <a href="https://www.youtube.com/embed/kkbfO8Ycfk8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Implementing a Cooperative Multi-Tenant Capable Prometheus
+<h4>Implementing a Cooperative Multi-Tenant Capable Prometheus</h4>
 
-Prometheus is capable of and used for monitoring large infrastructures, from corporate networks to world-spanning CDNs. But while performing excellent on setups of large scales, it is also extremely well suited for small setups due to its simplicity and modularity both in operation as well in usage.
+<p>Prometheus is capable of and used for monitoring large infrastructures, from corporate networks to world-spanning CDNs. But while performing excellent on setups of large scales, it is also extremely well suited for small setups due to its simplicity and modularity both in operation as well in usage.</p>
 
 <a href="https://www.youtube.com/embed/AO_I1oVcqBM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Monitoring at Scale: Migrating to Prometheus at Fastly
+<h4>Monitoring at Scale: Migrating to Prometheus at Fastly</h4>
 
-Over the past 6 months at Fastly we've migrated away from our legacy monitoring systems and have deployed Prometheus as our primary system for infrastructure and application monitoring.
+<p>Over the past 6 months at Fastly we've migrated away from our legacy monitoring systems and have deployed Prometheus as our primary system for infrastructure and application monitoring.</p>
 
 <a href="https://www.youtube.com/embed/ouLY973Ld24?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Automated Prometheus Benchmarking - Pushing It to Its Limits until It Breaks!
+<h4>Automated Prometheus Benchmarking - Pushing It to Its Limits until It Breaks!</h4>
 
-We will show you how we are trying to make Prometheus more stable by running automated benchmarking for risky PRs and before every release. 
-In other words, let's try to break it in our tests so it doesn't break in your production.
+<p>We will show you how we are trying to make Prometheus more stable by running automated benchmarking for risky PRs and before every release.
+In other words, let's try to break it in our tests so it doesn't break in your production.</p>
 
 <a href="https://www.youtube.com/embed/9LuVvVddJjg?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Anatomy of a Prometheus Client Library
+<h4>Anatomy of a Prometheus Client Library</h4>
 
-Prometheus client libraries are notably different from most other options in the space. In order to get the best insights into your applications it helps to know how they are designed, and why they are designed that way. This talk will look at how client libraries are structured, how that makes them easy to use, some tips for instrumentation, and why you should use them even if you aren't using Prometheus.
+<p>Prometheus client libraries are notably different from most other options in the space. In order to get the best insights into your applications it helps to know how they are designed, and why they are designed that way. This talk will look at how client libraries are structured, how that makes them easy to use, some tips for instrumentation, and why you should use them even if you aren't using Prometheus.</p>
 
 <a href="https://www.youtube.com/embed/D2OFAWV8aO8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Panel Discussion: Talk to Prometheus Developers
+<h4>Panel Discussion: Talk to Prometheus Developers</h4>
 
-A panel of Prometheus maintainers will answer questions about Prometheus, alternating between audience questions and presubmitted ones. 
+<p>A panel of Prometheus maintainers will answer questions about Prometheus, alternating between audience questions and presubmitted ones. </p>
 
 <a href="https://www.youtube.com/embed/PIKPn1D_UQc?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day Two
+<h4>Lightning Talks Day Two</h4>
 
-Speaker: 
+<p>Speaker: </p>
 
 <a href="https://www.youtube.com/embed/5h-8V5qY2j0?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-## PromCon munich 2019
-#### Migrating from Nagios to Prometheus at Runtastic
+<h2>PromCon munich 2019</h2>
+<h4>Migrating from Nagios to Prometheus at Runtastic</h4>
 
-Thinking of replacing your existing monitoring solution with Prometheus? In this talk we will show you how Runtastic moved its monitoring and alerting stack from Nagios to Prometheus. We'll show you how we managed to do this, how monitoring and alerting works with Prometheus and what challenges we were facing.  
+<p>Thinking of replacing your existing monitoring solution with Prometheus? In this talk we will show you how Runtastic moved its monitoring and alerting stack from Nagios to Prometheus. We'll show you how we managed to do this, how monitoring and alerting works with Prometheus and what challenges we were facing.  </p>
 
 <a href="https://www.youtube.com/embed/xSPNYXbAhQE?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Managing Grafana Dashboards with grafonnet and git
+<h4>Managing Grafana Dashboards with grafonnet and git</h4>
 
-Grafana is a wonderful tool for visualizing Prometheus data. Getting started with Grafana is simple: login, create a dashboard, add some graphs, and call it a day. Come back later, add some graphs, edit some graphs, hit save and it's all live!  Flash forward a few months or years and your Grafana instance probably has tens or hundreds of dashboards. Many of them present similar data in slightly inconsistent ways. You can see who last edited a dashboard and why, but it's hard to visualize the changes they made. There's no good way to review changes before they go live like you would for any other code you write. One row on your favorite dashboard is ever so slightly taller than the others and it makes you twitch every time you notice.  At DigitalOcean we've solved these problems by storing our dashboard definitions in git, making them human-readable with grafonnet, and updating them via continuous integration. In this talk we'll describe our setup, show how it enables component re-use between dashboards, and demonstrate how it improves the ergonomics of managing Grafana dashboards at scale.
+<p>Grafana is a wonderful tool for visualizing Prometheus data. Getting started with Grafana is simple: login, create a dashboard, add some graphs, and call it a day. Come back later, add some graphs, edit some graphs, hit save and it's all live!  Flash forward a few months or years and your Grafana instance probably has tens or hundreds of dashboards. Many of them present similar data in slightly inconsistent ways. You can see who last edited a dashboard and why, but it's hard to visualize the changes they made. There's no good way to review changes before they go live like you would for any other code you write. One row on your favorite dashboard is ever so slightly taller than the others and it makes you twitch every time you notice.  At DigitalOcean we've solved these problems by storing our dashboard definitions in git, making them human-readable with grafonnet, and updating them via continuous integration. In this talk we'll describe our setup, show how it enables component re-use between dashboards, and demonstrate how it improves the ergonomics of managing Grafana dashboards at scale.</p>
 
 <a href="https://www.youtube.com/embed/kV3Ua6guynI?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus in Small and Medium Businesses: Why You Don't Need to Do Rocket Science (Kubernetes) to Use It
+<h4>Prometheus in Small and Medium Businesses: Why You Don't Need to Do Rocket Science (Kubernetes) to Use It</h4>
 
-Prometheus, at first look, can appear very simple and at the same time very complicated, in this talk will be illustrate how a small/medium IT company can approach the deployment of the prometheus stack (Prometheus, Grafana, alertmanager and exporters), start from the local testing environment and ansible roles, to the targets labeling and exporters configurations. Will be also outlined the benefits that Prometheus can give to a company in terms of metrics visibility, the easiness to plug in new systems for generic metrics collections and the knowledge sharing, without necessary be used for monitoring dynamic and complex systems.
+<p>Prometheus, at first look, can appear very simple and at the same time very complicated, in this talk will be illustrate how a small/medium IT company can approach the deployment of the prometheus stack (Prometheus, Grafana, alertmanager and exporters), start from the local testing environment and ansible roles, to the targets labeling and exporters configurations. Will be also outlined the benefits that Prometheus can give to a company in terms of metrics visibility, the easiness to plug in new systems for generic metrics collections and the knowledge sharing, without necessary be used for monitoring dynamic and complex systems.</p>
 
 <a href="https://www.youtube.com/embed/YExcXNCPLN8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### PromQL for Mere Mortals
+<h4>PromQL for Mere Mortals</h4>
 
-PromQL can feel intimidating at first for those new to the Prometheus ecosystem, but it is an essential skill to learn when starting out monitoring and alerting in the Prometheus ecosystem.   In this beginner-focused, demo-driven talk Ian Billett will walk through the thought processes, mental models and coping strategies he uses to tame PromQL and effectively query metrics data.   We will demystify instant vector selectors from range vector selectors, understand how aggregate functions work, and, time-permitting, even touch on some PromQL engine internals.
+<p>PromQL can feel intimidating at first for those new to the Prometheus ecosystem, but it is an essential skill to learn when starting out monitoring and alerting in the Prometheus ecosystem.   In this beginner-focused, demo-driven talk Ian Billett will walk through the thought processes, mental models and coping strategies he uses to tame PromQL and effectively query metrics data.   We will demystify instant vector selectors from range vector selectors, understand how aggregate functions work, and, time-permitting, even touch on some PromQL engine internals.</p>
 
 <a href="https://www.youtube.com/embed/hTjHuoWxsks?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Managing Prometheus in a Security-focused Environment -- Linux Monitoring at HUK-COBURG
+<h4>Managing Prometheus in a Security-focused Environment -- Linux Monitoring at HUK-COBURG</h4>
 
-Prometheus offers lots of features and flexibility which often leaves newcomers with lots of open questions: Which service discovery to use? How to secure access to metrics? Which architecture to implement?  In order to provide some input back to the community, this talk will outline how we run Prometheus at HUK-COBURG in order to provide a multi-tenant turn-key monitoring experience in a security-focused environment. It covers basic decisions like scrape intervals and service discovery and extends to the implementation of encrypted and authenticated connections to monitoring targets using sshified and team-aware access to Prometheus/Grafana access via prometheus-filter-proxy.
+<p>Prometheus offers lots of features and flexibility which often leaves newcomers with lots of open questions: Which service discovery to use? How to secure access to metrics? Which architecture to implement?  In order to provide some input back to the community, this talk will outline how we run Prometheus at HUK-COBURG in order to provide a multi-tenant turn-key monitoring experience in a security-focused environment. It covers basic decisions like scrape intervals and service discovery and extends to the implementation of encrypted and authenticated connections to monitoring targets using sshified and team-aware access to Prometheus/Grafana access via prometheus-filter-proxy.</p>
 
 <a href="https://www.youtube.com/embed/qwWw41LEoSU?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Fun and Profit with Alertmanager
+<h4>Fun and Profit with Alertmanager</h4>
 
-Getting someone to know that a problem exists is the main reason why we run monitoring infrastructure. Prometheus and AlertManager are very good at it but requirements vary from person to person. In this presentation, Simon Pasquier will introduce the Prometheus alerting philosophy. Then he will discuss AlertManager's good practices and pitfalls. Finally he will show advanced use cases.
+<p>Getting someone to know that a problem exists is the main reason why we run monitoring infrastructure. Prometheus and AlertManager are very good at it but requirements vary from person to person. In this presentation, Simon Pasquier will introduce the Prometheus alerting philosophy. Then he will discuss AlertManager's good practices and pitfalls. Finally he will show advanced use cases.</p>
 
 <a href="https://www.youtube.com/embed/VgsM8pOyN5s?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Practical Capacity Planning Using Prometheus
+<h4>Practical Capacity Planning Using Prometheus</h4>
 
-GitLab.com’s monolithic Rails application experiences high week-on-week traffic growth. To ensure availability, GitLab’s Infrastructure team track and plan ahead in order to avoid hitting capacity limits in the application, whether these limits be CPU, database connection pools, memory, storage or any number of other finite resources. Hitting these limits could result in hours, or days, of degraded service while workarounds are put in place.  With this in mind, the team set about building a set of tools on top of Prometheus recording rules and alerts to provide them with the information they need to be sufficiently forewarned, up to a month in advance, of potential resource saturation issues.  If you’ve ever felt that you’re reactively responding to resource saturation issues, this session will provide practical examples of how we’re building a framework for resource planning into our SRE team workflow. We’ll be presenting our open-source solution and explaining how it works for us.
+<p>GitLab.com’s monolithic Rails application experiences high week-on-week traffic growth. To ensure availability, GitLab’s Infrastructure team track and plan ahead in order to avoid hitting capacity limits in the application, whether these limits be CPU, database connection pools, memory, storage or any number of other finite resources. Hitting these limits could result in hours, or days, of degraded service while workarounds are put in place.  With this in mind, the team set about building a set of tools on top of Prometheus recording rules and alerts to provide them with the information they need to be sufficiently forewarned, up to a month in advance, of potential resource saturation issues.  If you’ve ever felt that you’re reactively responding to resource saturation issues, this session will provide practical examples of how we’re building a framework for resource planning into our SRE team workflow. We’ll be presenting our open-source solution and explaining how it works for us.</p>
 
 <a href="https://www.youtube.com/embed/swnj6KTRg08?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus @ Datacenters - Or Why Modbus Is Even Worse than SNMP
+<h4>Prometheus @ Datacenters - Or Why Modbus Is Even Worse than SNMP</h4>
 
-The cloud runs on servers, and those live in datacenters. Most everything in datacenters speaks ModBus/TCP; SNMP being considered too modern. Lessons learned and problems overcome along with some nice pictures.
+<p>The cloud runs on servers, and those live in datacenters. Most everything in datacenters speaks ModBus/TCP; SNMP being considered too modern. Lessons learned and problems overcome along with some nice pictures.</p>
 
 <a href="https://www.youtube.com/embed/mQEoKoYX0zA?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Remote Write Storage Wars
+<h4>Remote Write Storage Wars</h4>
 
-Remote write storage is a hot topic, several systems existed for a few years (Cortex, M3DB, InfluxDB) and some systems have been born in the past few months (Thanos receive, VictoriaMetrics). Each system has it's own architecture and different trade-offs.  In this talk, Alejandro will present adidas findings on experiments to benchmark various remote write open source storage systems such as Cortex, M3DB, Thanos, VictoriaMetrics and others. The experiments try to benchmark scalability and elasticity of each storage system.
+<p>Remote write storage is a hot topic, several systems existed for a few years (Cortex, M3DB, InfluxDB) and some systems have been born in the past few months (Thanos receive, VictoriaMetrics). Each system has it's own architecture and different trade-offs.  In this talk, Alejandro will present adidas findings on experiments to benchmark various remote write open source storage systems such as Cortex, M3DB, Thanos, VictoriaMetrics and others. The experiments try to benchmark scalability and elasticity of each storage system.</p>
 
 <a href="https://www.youtube.com/embed/OsH6gPdxR4s?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Expectations on Remote Data
+<h4>Expectations on Remote Data</h4>
 
-Prometheus's remote storage API allows PromQL evaluation to work with stores other than TSDB, and with data that may not have originated via native Prometheus scraping. PromQL has expectations about the data served by the API, which must be met in order to give a "compatible" user experience with native Prometheus.  I'll present my teams experience marrying an existing distributed time series database, originally designed around storing downsampled statsd-style metrics, with a PromQL evaluation engine. I'll cover topics including: downsampling, counter aggregation, series staleness, and others. 
+<p>Prometheus's remote storage API allows PromQL evaluation to work with stores other than TSDB, and with data that may not have originated via native Prometheus scraping. PromQL has expectations about the data served by the API, which must be met in order to give a "compatible" user experience with native Prometheus.  I'll present my teams experience marrying an existing distributed time series database, originally designed around storing downsampled statsd-style metrics, with a PromQL evaluation engine. I'll cover topics including: downsampling, counter aggregation, series staleness, and others. </p>
 
 <a href="https://www.youtube.com/embed/_asWX7RL2mg?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Two Households, Both Alike in Dignity: Cortex and Thanos
+<h4>Two Households, Both Alike in Dignity: Cortex and Thanos</h4>
 
-Perhaps some of the success of the original Prometheus project can be attributed to the desire to keep it simple: no dependencies, no trendy distributed systems, a single binary with a simple mission.  This approach left some problems unsolved - how do you scale your Prometheus installation across multiple sites? How do you ensure your metrics are durably stored for long term analysis? And how do you build a monitoring system that can transparently tolerate machine failure?  In this talk, we introduce two of the most popular solutions to these problems: Cortex and Thanos. Both CNCF projects, Cortex and Thanos share many components with Prometheus, but they take a fundamentally different approach to how these pieces are joined together.  This talk will help you understand the different tradeoffs these two projects have taken, give you an understanding of where each project’s strengths lie and help you decide which of these projects is best for you.
+<p>Perhaps some of the success of the original Prometheus project can be attributed to the desire to keep it simple: no dependencies, no trendy distributed systems, a single binary with a simple mission.  This approach left some problems unsolved - how do you scale your Prometheus installation across multiple sites? How do you ensure your metrics are durably stored for long term analysis? And how do you build a monitoring system that can transparently tolerate machine failure?  In this talk, we introduce two of the most popular solutions to these problems: Cortex and Thanos. Both CNCF projects, Cortex and Thanos share many components with Prometheus, but they take a fundamentally different approach to how these pieces are joined together.  This talk will help you understand the different tradeoffs these two projects have taken, give you an understanding of where each project’s strengths lie and help you decide which of these projects is best for you.</p>
 
 <a href="https://www.youtube.com/embed/KmJnmd3K3Ws?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day One
+<h4>Lightning Talks Day One</h4>
 
-None
+<p>None</p>
 
 <a href="https://www.youtube.com/embed/kRVE15j1zxQ?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus at Prezi: Replacing 10 Years of Anti-patterns
+<h4>Prometheus at Prezi: Replacing 10 Years of Anti-patterns</h4>
 
-This talk goes over how our micro-services infrastructure is set up at Prezi, how it used to be monitored with convoluted and unreliable solutions, how we introduced Prometheus to all of our services, what we learned, where we failed, how it improved our engineers' life and what it enables us to do now.  We recently spent 8 months redesigning our entire monitoring infrastructure, replacing 10 years of unreliable organically grown solutions to a uniform and highly available Prometheus-based platform. Our services being mostly written in Django/Python, we spent a lot of time getting in right and contributed back to the community (see 
+<p>This talk goes over how our micro-services infrastructure is set up at Prezi, how it used to be monitored with convoluted and unreliable solutions, how we introduced Prometheus to all of our services, what we learned, where we failed, how it improved our engineers' life and what it enables us to do now.  We recently spent 8 months redesigning our entire monitoring infrastructure, replacing 10 years of unreliable organically grown solutions to a uniform and highly available Prometheus-based platform. Our services being mostly written in Django/Python, we spent a lot of time getting in right and contributed back to the community (see </p>
 
 <a href="https://www.youtube.com/embed/2vnvmE3-HMM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Containing Your Cardinality
+<h4>Containing Your Cardinality</h4>
 
-Spending time in the Prometheus community quickly instills a fear of high cardinality metrics; however, cardinality provides immense value for certain workloads. Learn when to use high cardinality metrics, how to reduce unnecessary cardinality, and how to find the sources of excessive cardinality in your data.
+<p>Spending time in the Prometheus community quickly instills a fear of high cardinality metrics; however, cardinality provides immense value for certain workloads. Learn when to use high cardinality metrics, how to reduce unnecessary cardinality, and how to find the sources of excessive cardinality in your data.</p>
 
 <a href="https://www.youtube.com/embed/49BGvC1coG4?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Monitoring Nodeless Kubernetes Workloads with Prometheus
+<h4>Monitoring Nodeless Kubernetes Workloads with Prometheus</h4>
 
-Emerging Nodeless Kubernetes solutions like virtual-kubelet and Kiyot simplify public cloud k8s node management, save cost, and improve multi-tenant security. This talk explores how Prometheus can be used to monitor Nodeless Kubernetes workloads on public cloud. Demo included.
+<p>Emerging Nodeless Kubernetes solutions like virtual-kubelet and Kiyot simplify public cloud k8s node management, save cost, and improve multi-tenant security. This talk explores how Prometheus can be used to monitor Nodeless Kubernetes workloads on public cloud. Demo included.</p>
 
 <a href="https://www.youtube.com/embed/JcVOuCBRN8s?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus and Jaeger: A Match Made in Heaven!
+<h4>Prometheus and Jaeger: A Match Made in Heaven!</h4>
 
-Jaeger is an OSS distributed tracing solution, also part of the CNCF. Standalone, it can add immense value but when coupled with Prometheus, there is a lot more to gain. We have leveraged Prometheus and Jaeger together to make Cortex 10x faster and we will be sharing our journey and key learnings.  With Prometheus, we have our RED dashboards that highlight which services are slow, and we then use Jaeger to drill down and investigate which functions are taking how long, if we’re making too many calls, if we could batch calls together, etc. We then verify the impact using Jaeger and Prometheus after rolling out the changes. Without our RED dashboards, it would be shooting in the dark to find out which spans/services we should look at in Jaeger. Usually the slowness occurs in only one cluster. To enable filtering of traces to only that cluster/env, we enrich the traces with the same metadata that prometheus has.  We were also seeing very slow queries once in a while that weren’t very obvious when using only dashboards. We then started logging the trace ID in our request logs. We picked the requests that took too long, and used their trace IDs to probe for issues with that particular request. While this approach works, you need a solid log aggregation system, and even then it’s not exactly easy to find the interesting traces (longest/shortest requests). We will show you how Prometheus helps by providing us exemplars that can let us directly jump to the right traces from the latency dashboards. We will end the talk by demo-ing everything discussed.
+<p>Jaeger is an OSS distributed tracing solution, also part of the CNCF. Standalone, it can add immense value but when coupled with Prometheus, there is a lot more to gain. We have leveraged Prometheus and Jaeger together to make Cortex 10x faster and we will be sharing our journey and key learnings.  With Prometheus, we have our RED dashboards that highlight which services are slow, and we then use Jaeger to drill down and investigate which functions are taking how long, if we’re making too many calls, if we could batch calls together, etc. We then verify the impact using Jaeger and Prometheus after rolling out the changes. Without our RED dashboards, it would be shooting in the dark to find out which spans/services we should look at in Jaeger. Usually the slowness occurs in only one cluster. To enable filtering of traces to only that cluster/env, we enrich the traces with the same metadata that prometheus has.  We were also seeing very slow queries once in a while that weren’t very obvious when using only dashboards. We then started logging the trace ID in our request logs. We picked the requests that took too long, and used their trace IDs to probe for issues with that particular request. While this approach works, you need a solid log aggregation system, and even then it’s not exactly easy to find the interesting traces (longest/shortest requests). We will show you how Prometheus helps by providing us exemplars that can let us directly jump to the right traces from the latency dashboards. We will end the talk by demo-ing everything discussed.</p>
 
 <a href="https://www.youtube.com/embed/EvzTFUMqCXY?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Improved Alerting with Prometheus and Alertmanager
+<h4>Improved Alerting with Prometheus and Alertmanager</h4>
 
-One of the reasons we collect metrics is to be able to alert on them. This presentation will introduce you some concepts of PromQL, prometheus and alertmanager to highly improve the quality and reliability of your alerts.  This talk will cover different topic, including:  - Reducing flapping alerts - Hysteresis - "Time of the day" based alerting - Computed thresholds with data history
+<p>One of the reasons we collect metrics is to be able to alert on them. This presentation will introduce you some concepts of PromQL, prometheus and alertmanager to highly improve the quality and reliability of your alerts.  This talk will cover different topic, including:  - Reducing flapping alerts - Hysteresis - "Time of the day" based alerting - Computed thresholds with data history</p>
 
 <a href="https://www.youtube.com/embed/RlOA5KgBkz8?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### OpenMetrics: What Does It Mean for You
+<h4>OpenMetrics: What Does It Mean for You</h4>
 
-The OpenMetrics format intends to standardise metric exposition, making it easy for both those developing and operating systems to monitor them. It is however a new format. Will it be supported by your monitoring system? Will you need to rewrite your existing instrumentation? What's needed to transition? What about 3rd party systems you don't control? How does this differ and expand, and improve on the existing Prometheus format?  This session will cover all of these questions.
+<p>The OpenMetrics format intends to standardise metric exposition, making it easy for both those developing and operating systems to monitor them. It is however a new format. Will it be supported by your monitoring system? Will you need to rewrite your existing instrumentation? What's needed to transition? What about 3rd party systems you don't control? How does this differ and expand, and improve on the existing Prometheus format?  This session will cover all of these questions.</p>
 
 <a href="https://www.youtube.com/embed/orV4hrk0fJM?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### TSDB: 1 Year In
+<h4>TSDB: 1 Year In</h4>
 
-Since a major revamp of the Prometheus storage engine as part of the Prometheus 2.0 release, there have been a lot of enhancements and feature additions in TSDB.
+<p>Since a major revamp of the Prometheus storage engine as part of the Prometheus 2.0 release, there have been a lot of enhancements and feature additions in TSDB.</p>
 
 <a href="https://www.youtube.com/embed/ogtK5-Tvp-E?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### What the Fork‽ Reporting Metrics in a Multi-process Environment
+<h4>What the Fork‽ Reporting Metrics in a Multi-process Environment</h4>
 
-For many years, most Ruby applications couldn't use Prometheus, because the Ruby client didn't support pre-fork servers. It turns out this wasn't solved for such a long time because it's a surprisingly hard problem. Many have tried to solve this with different approaches, but we found the best one to be the simplest. Let me show you the dark arts of inter-process communication, and how we ended up fully supporting metrics in Ruby.
+<p>For many years, most Ruby applications couldn't use Prometheus, because the Ruby client didn't support pre-fork servers. It turns out this wasn't solved for such a long time because it's a surprisingly hard problem. Many have tried to solve this with different approaches, but we found the best one to be the simplest. Let me show you the dark arts of inter-process communication, and how we ended up fully supporting metrics in Ruby.</p>
 
 <a href="https://www.youtube.com/embed/Or_LMxyHwWY?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Prometheus Histograms – Past, Present, and Future
+<h4>Prometheus Histograms – Past, Present, and Future</h4>
 
-Representing distributions in a metrics-based monitoring system is both important and hard. Doing it right unlocks many powerful use cases. What does Prometheus offer in this regard? And what are the pitfalls with the current state of the art? To help understand the present, this talk will also shed light on the past. How have the Histogram and Summary metric types become what they are today with all their weal and woe? Finally, let's have a look at the rich body of research happening in the area, and how it might benefit future versions of Prometheus.
+<p>Representing distributions in a metrics-based monitoring system is both important and hard. Doing it right unlocks many powerful use cases. What does Prometheus offer in this regard? And what are the pitfalls with the current state of the art? To help understand the present, this talk will also shed light on the past. How have the Histogram and Summary metric types become what they are today with all their weal and woe? Finally, let's have a look at the rich body of research happening in the area, and how it might benefit future versions of Prometheus.</p>
 
 <a href="https://www.youtube.com/embed/7sQFkaMCyEI?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
 
-#### Lightning Talks Day Two
+<h4>Lightning Talks Day Two</h4>
 
-None
+<p>None</p>
 
 <a href="https://www.youtube.com/embed/UTODrbR9yxE?list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vm&origin=https://promcon.io">Watch . . .</a>
