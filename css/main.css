@@ -1,16 +1,5 @@
-html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
+html {
   background-color: #0edbeb;
-}
-.content {
-  flex: 1 0 auto;
-}
-.footer {
-  flex-shrink: 0;
 }
 
 .site {
@@ -28,4 +17,8 @@ body {
 
 .footer {
   padding: 5px 5px 5px 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
